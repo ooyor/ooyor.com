@@ -1,0 +1,52 @@
+body {
+    background: #fff;
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.scene {
+    margin-left: -222px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.iphone {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -421px;
+    padding-left: 469px;
+    padding-top: 243px;
+    width: 374px;
+    height: 83px;
+    background-image: url(../images/phone.png);
+}
+
+.iphone a {
+    width: 48px;
+    height: 37px;
+    display: block;
+    float: left;
+}
+
+.iphone .behance {
+    background-image: url(../images/behance.png);
+}
+.iphone .douban {
+    background-image: url(../images/douban.png);
+}
+.iphone .weibo {
+    background-image: url(../images/weibo.png);
+}
+.iphone .linkdin {
+    background-image: url(../images/linkdin.png);
+}
+.iphone .dribbble {
+    background-image: url(../images/dribbble.png);
+}
+.iphone .email {
+    background-image: url(../images/email.png);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ooyor</title>
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+</head>
+<body>
+	<div id="container" class="container">
+		<ul id="scene" class="scene">
+			<li class="layer" data-depth="1.00"><img src="images/jizai_jp.png"></li>
+			<li class="layer" data-depth="0.50"><img src="images/jizai_zh.png"></li>
+		</ul>
+		<div class="iphone">
+			<a target="_blank" href="http://dribbble.com/ooyor" class="behance"></a>
+			<a target="_blank" href="http://www.douban.com/people/ooyor/" class="douban"></a>
+			<a target="_blank" href="http://weibo.com/ooyor" class="weibo"></a>
+			<a target="_blank" href="http://www.linkedin.com/pub/yao-lin/33/261/767" class="linkdin"></a>
+			<a target="_blank" href="http://dribbble.com/ooyor" class="dribbble"></a>
+			<a target="_blank" href="mailto:oooyor@gmail.com" class="email"></a>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/parallax.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+
+		function resize() {
+			var marginTop = ($(window).height() - 300)/2 - 114;
+			if (marginTop < 0) {
+				marginTop = 0
+			}
+			$("#scene").css("marginTop", marginTop);
+		}
+		resize();
+		$(window).resize(resize);
+
+	</script>
+
+</body>
+</html>
