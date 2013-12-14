@@ -32,6 +32,10 @@ img {
     float: left;
 }
 
+.iphone .instagram {
+    background-image: url(../images/instagram.png);
+}
+
 .iphone .behance {
     background-image: url(../images/behance.png);
 }
